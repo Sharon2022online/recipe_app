@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="static/style/css/user_profile.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="hero">
+        <div class="card">
+            <h1>Welcome {{user.name}}</h1>
+            <p>{{user.email}}</p>
+            <img src="{{ user.pic.url }}" id="profile-pic"> 
+            <button type="submit" class="submit"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <input type="file" accept="image/jpg, image/png,image/jpeg" id="input-file">
+            <div class="card-container">
+                <a href="edit_profile?id={{ user.id }}">
+                <button class="edit-button"><i class="fas fa-edit">Edit Profile</i></button>
+                </a>
+            </div>
+            <div class="card-container2">
+                <a href="favourites">
+                <button class="cp_button"><i class="fas fa-heart">Favourites</i></button>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+<!-- <script>
+    let profilePic = document.getElementById("profile-pic");
+    let inputFile = document.getElementById("input-file");
+
+    inputFile.onchange = function(){
+        profilePic.src = URL.createObjectURL(inputFile.files[0]);
+    }
+    </script> -->
+<!-- <script type="text/javascript" src="static/style/js/main.js"></script> -->
+
+</body>
+</html>

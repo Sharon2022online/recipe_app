@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="static/style/images/favicon.png" type="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-xxx" crossorigin="anonymous">
+
+  <title>{% block title %} Cravings {% endblock %}</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/style/css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="static/style/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/style/css/responsive.css" rel="stylesheet" />
+  {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    
+  
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="static/style/images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    {% block header %}
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="base.html">
+            <span>
+            {% block brand_name %} {% endblock %}
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="all_recipes">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              
+            </ul>
+            <div class="user_option">
+                
+              <a href="user_profile" class="login">
+              Profile
+              </a>
+              <a href="" class="login">
+                Logout
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      {% endblock %}
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    {% block slider %}
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Cravings
+                    </h1>
+                    <p>
+                      A recipe is a story that ends with a good meal.A recipe has no soul,You as the cook bring soul to the recipe
+                    </p>
+                    <div class="btn-box">
+                      <a href="all_recipes" class="btn1">
+                        Explore Recipes
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Cravings
+                    </h1>
+                    <p>
+                      No one is born a great cook,one learns by doing.The only secret sauce in cooking is the one made from passion and hardwork.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Explore Recipes
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Cravings
+                    </h1>
+                    <p>
+                      Food is a symbol of love when words are inadequate.There is no sincere love than the love of food.
+                    </p>
+                    <div class="btn-box">
+                      <a href="all_recipes" class="btn1">
+                        Explore Recipes
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    {% endblock %}
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+  {% block offer %}
+  <section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="static/style/images/o1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Vegetarian Menu
+                </h5>
+                <div class="btn-box">
+                  <a href="veg" class="btn1">
+                    Explore
+                  </a>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="static/style/images/o2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Non-Vegetarian Menu
+                </h5>
+                <div class="btn-box">
+                  <a href="nonveg" class="btn1">
+                    Explore
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </section>
+ 
+  <!-- end offer section -->
+    <!-- food section -->
+    {% block food %}
+    <section class="food_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Chef's Corner
+          </h2>
+        </div>
+        <!-- <div class="row">
+        {% for chef in chefs %}
+        <div class="col-sm-6 col-lg-4 all pizza">
+        <div class="box">
+        <div>
+          <div class="img-box" style="height: 233px; width: 301px; overflow: hidden; padding: 1px;">
+            <img src="{{ chef.pic.url }}"
+             style="object-fit: cover; height: 130%; width: 100%; margin: 0;padding: 0;" id="pic" 
+             alt="{{ chef.name }} Image">
+
+          </div>
+                  
+        <div class="detail-box">
+          <h5 class="text-center">
+          {{ chef.name }}
+          </h5>
+          <div class="btn-box" style="margin-top: 0px;">
+            <a href="" class="btn1">
+              View Recipes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+    </div> -->
+
+        <div class="btn-box">
+          <a href="">
+            View More
+          </a>
+        </div>
+      </div>
+      {% endblock %}
+    </section>
+  
+    <!-- end food section -->
+  
+  <!-- about section -->
+  {% block about %}
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="static/style/images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Who Are We!
+              </h2>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
+              the middle of text. All
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </section>
+
+  <!-- end about section -->
+
+  
+
+ 
+
+  <!-- footer section -->
+  {% block footer %}
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h4 class="footer_contact">
+            Quick Links
+          </h4>
+          <p>
+            <a href="#!" class="text-reset">Breakfast Recipe</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Lunch Recipes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Dinner Recipes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Dessert Recipes</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Cravings
+            </a>
+            <p>
+              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer_contact">
+              <h4>
+                Contact Us
+              </h4>
+              <div class="contact_link_box">
+              
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Call +01 1234567890
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    demo@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      
+    </div>
+    {% endblock %}
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery 
+  <script src="static/style/js/jquery-3.4.1.min.js"></script>-->
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js
+  <script src="static/style/js/bootstrap.js"></script>-->
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js 
+  <script src="static/style/js/custom.js"></script>-->
+  
+
+</body>
+
+</html>
